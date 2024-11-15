@@ -35,6 +35,7 @@ export interface Settings {
     enableReactDevtools: boolean;
     themeLinks: string[];
     enabledThemes: string[];
+    onlineThemeOverrides: Record<string, string>;
     frameless: boolean;
     transparent: boolean;
     winCtrlQ: boolean;
@@ -82,6 +83,7 @@ const DefaultSettings: Settings = {
     useQuickCss: true,
     themeLinks: [],
     enabledThemes: [],
+    onlineThemeOverrides: {},
     enableReactDevtools: false,
     frameless: false,
     transparent: false,
